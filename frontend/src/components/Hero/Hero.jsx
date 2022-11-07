@@ -66,8 +66,11 @@ const Hero = () => {
 
 				<div className="calories">
 					<img src={Calories} alt="" />
-					<div>Calories Burned</div>
-					<div>220kcal</div>
+					<div>
+						<span>Calories Burned</span>
+						<span>220kcal</span>
+					</div>
+
 				</div>
 
 			</div>
