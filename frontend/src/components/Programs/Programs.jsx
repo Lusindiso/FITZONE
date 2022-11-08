@@ -5,25 +5,23 @@ import RightArrow from '../../assets/rightArrow.png';
 const Programs = () => {
   return (
     <div className="programs" id="programs">
-      <div className="container">
-        <div className="programs-header">
-          <span className='stroke-text'>Explore our</span>
-          <span>Programs</span>
-          <span className='stroke-text'>to shape you</span>
-        </div>
+      <div className="programs-header">
+        <span className='stroke-text'>Explore our</span>
+        <span>Programs</span>
+        <span className='stroke-text'>to shape you</span>
+      </div>
 
-        <div className="programs-categories">
-          {programsData.map(program => (
-            <div className='category' key={program._id}>
-              {program.image}
-              <span>{program.heading}</span>
-              <span>{program.details}</span>
-              <div className="join-now">
-                <span>Join now</span>
-                <img src={RightArrow} alt="" />
-              </div>
-            </div>))}
-        </div>
+      <div className="programs-categories">
+        {programsData.map(program => (
+          <div className='category' key={program._id}>
+            {program.image}
+            <span>{program.heading}</span>
+            <span>{program.details}</span>
+            <div className="join-now">
+              <span>Join now</span>
+              <img src={RightArrow} alt="" />
+            </div>
+          </div>))}
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-.plans-container > div {
+.plans-container {
 	margin-top: -4rem;
 	padding: 0 2rem;
 	display: flex;
@@ -9,6 +9,19 @@
 
 .programs-header {
 	gap: 2rem;
+}
+
+.blur-p-1 {
+	width: 32rem;
+	height: 23rem;
+	top: 6rem;
+	left: 0;
+}
+.blur-p-2 {
+	width: 32rem;
+	height: 23rem;
+	top: 10rem;
+	right: 0;
 }
 
 .plans {
@@ -75,4 +88,10 @@
 
 .feature > img {
 	width: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+	.plans {
+		flex-direction: column;
+	}
 }

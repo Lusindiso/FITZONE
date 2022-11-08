@@ -1,4 +1,4 @@
-.reasons > div {
+.reasons {
 	padding: 0 2rem;
 	display: flex;
 	gap: 2rem;
@@ -89,4 +89,36 @@
 
 .partners > img {
 	width: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+	.reasons {
+		flex-direction: column;
+	}
+
+	.left-r {
+		grid-auto-rows: auto;
+		overflow: hidden;
+		gap: 0.5rem;
+	}
+
+	.left-r > :nth-child(1) {
+		width: 26vw;
+		height: 65vw;
+	}
+
+	.left-r > :nth-child(2) {
+		width: 60vw;
+		height: 38vw;
+	}
+
+	.left-r > :nth-child(3) {
+		width: 29vw;
+		height: 24vw;
+	}
+
+	.left-r > :nth-child(4) {
+		width: 29vw;
+		height: 24vw;
+	}
 }
