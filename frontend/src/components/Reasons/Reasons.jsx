@@ -13,42 +13,44 @@ import tick from '../../assets/tick.png';
 const Reasons = () => {
   return (
     <div className="reasons" id="reasons">
-      <div className="left-r">
-        <img src={image1} alt="" />
-        <img src={image2} alt="" />
-        <img src={image3} alt="" />
-        <img src={image4} alt="" />
-      </div>
-      <div className="right-r">
-        <span>some reasons</span>
+      <div className="container">
+        <div className="left-r">
+          <img src={image1} alt="" />
+          <img src={image2} alt="" />
+          <img src={image3} alt="" />
+          <img src={image4} alt="" />
+        </div>
+        <div className="right-r">
+          <span>some reasons</span>
 
-        <div>
-          <span className='stroke-text'>Why</span>
-          <span> choose us?</span>
-        </div>
-        <div className='details-r'>
           <div>
-            <img src={tick} alt="" />
-            <span>Over 140+ expert coaches</span>
+            <span className='stroke-text'>Why</span>
+            <span> choose us?</span>
           </div>
-          <div>
-            <img src={tick} alt="" />
-            <span>Train smarter and faster than before</span>
+          <div className='details-r'>
+            <div>
+              <img src={tick} alt="" />
+              <span>Over 140+ expert coaches</span>
+            </div>
+            <div>
+              <img src={tick} alt="" />
+              <span>Train smarter and faster than before</span>
+            </div>
+            <div>
+              <img src={tick} alt="" />
+              <span>1 Free program for new member</span>
+            </div>
+            <div>
+              <img src={tick} alt="" />
+              <span>Reliable partners</span>
+            </div>
           </div>
-          <div>
-            <img src={tick} alt="" />
-            <span>1 Free program for new member</span>
+          <span className='partners-h'>Our partners</span>
+          <div className="partners">
+            <img src={nb} alt="" />
+            <img src={adidas} alt="" />
+            <img src={nike} alt="" />
           </div>
-          <div>
-            <img src={tick} alt="" />
-            <span>Reliable partners</span>
-          </div>
-        </div>
-        <span className='partners-h'>Our partners</span>
-        <div className="partners">
-          <img src={nb} alt="" />
-          <img src={adidas} alt="" />
-          <img src={nike} alt="" />
         </div>
       </div>
     </div>
