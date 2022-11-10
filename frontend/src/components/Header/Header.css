@@ -5,7 +5,7 @@
 
 .logo {
 	width: 10rem;
-	height: 3rem; 
+	height: 3rem;
 }
 
 .header-menu {
@@ -15,11 +15,35 @@
 	color: white;
 }
 
-.header-menu>li {
+.header-menu > li {
 	cursor: pointer;
 }
 
-.header-menu>li:hover {
+.header-menu > li:hover {
 	color: var(--orange);
 	cursor: pointer;
+}
+
+.bars {
+	width: 1.5rem;
+	width: 1.5rem;
+}
+
+.header > div {
+	background-color: var(--appColor);
+	padding: 0.5rem;
+	border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+	.header > :nth-child(2) {
+		position: fixed;
+		right: 2rem;
+		z-index: 100;
+	}
+
+	.header-menu {
+		flex-direction: column;
+		background-color: var(--appColor);
+		padding: 2rem;
+	}
 }
